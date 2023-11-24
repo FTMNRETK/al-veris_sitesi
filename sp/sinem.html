@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sinem</title>
+</head>
+<body style="background-color: rgb(131, 220, 239);">
+      <div class="container">
+<div class="main">
+<h2>SİNEM PİLAFCI</h2>
+<form id="form_id" method="post" name="myform">
+<label>Kullanıcı Adı :</label>
+<input type="text" name="username" id="username"/>
+<label>Kullanıcı Parola:</label>
+<input type="password" name="password" id="password"/>
+<input type="button" value="Giriş" id="submit" onclick="myFunction()"/>
+</form>
+</div>
+</div>
+
+    <script>
+    function myFunction(){
+
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    if ( username == "sinem" && password == "123"){
+    alert ("Ödev"+" "+ username);
+    window.location = "new.html";
+    return false;
+    }
+    else{
+    
+    alert("Tekrar deneyin "+attempt+" hakkınız kaldı;");
+
+   
+
+    document.getElementById("submit").disabled = true;
+    return false;
+            }
+        }
+    
+    </script>
+</body>
+</html>
